@@ -24,5 +24,16 @@ class BankTest {
 			e.fillInStackTrace();
 		}
 	}
+	
+	@Test
+	public void NameLongCase() {
+		Bank b = new Bank();
+		try {
+			b.setName("A");
+		}catch(IllegalArgumentException e) {
+			e.fillInStackTrace();
+		}
+		
+	}
 
 }
